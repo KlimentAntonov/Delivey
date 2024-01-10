@@ -331,9 +331,12 @@ public class DHLForm3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu3MouseClicked
 
     public void loadParcels(){
+        int x=0,y=0;
         for(Parcel p:parcels){
             ParcelDetails pdp = new ParcelDetails(p);
-            
+            pdp.setBounds(x,y,500,120);
+            y+=100;
+            jPanelList.add(pdp);
         }
     }
         
